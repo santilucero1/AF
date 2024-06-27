@@ -28,6 +28,7 @@ body {
 .item {
    
     color: #EFB810;
+    text-shadow:2px 2px #251c04;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,16 +36,45 @@ body {
     
 }
 
+.item:hover {
+    background-color: #EFB810;
+    color: black;
+    text-shadow: none;
+    cursor: pointer;
+}
+
 .texto {
     color: black;
 }
 
 
-.divisor {
+.divisor-logo {
     display: flex;
-    margin-top: 150px; /* Ajusta según el espacio deseado entre el header fijo y este divisor */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 200px; /* Altura del divisor */
+    /* Borde para visualización */
+    margin: 60px auto; /* Margen superior e inferior de 20px y centrado horizontalmente */
+    margin-top: 160px;
+    padding: 50px; /* Espaciado interno para separar el contenido del borde */
+    max-width: 800px; /* Ancho máximo del contenedor */
+}
+
+.logo {
+    max-width: 100%; /* Asegura que la imagen no sobrepase el ancho del contenedor */
+    max-height: 100%; /* Asegura que la imagen no sobrepase la altura del contenedor */
+}
+
+
+
+
+.divisor { /*Quienes somos?*/
+    display: flex;
+    margin-top: 0px; /* Ajusta según el espacio deseado entre el header fijo y este divisor */
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color:#EFB810;
+   
+    
 }
 
 
@@ -54,6 +84,7 @@ body {
     flex: 1; /* Ocupa todo el espacio restante */
     display: flex; /* Aplica flexbox dentro del contenedor de texto */
     flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: center;
     gap: 0px;
 }
 
@@ -64,7 +95,9 @@ body {
 .texto-grande h2 {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: black;
+    
+    
 }
 
 .texto-chico {
@@ -74,16 +107,12 @@ body {
 }
 
 .texto-chico p {
-    font-size: 14px;
-    color: #666;
+    font-size: 16px;
+    color: black;
     margin-bottom: 20px;
 }
 
-.contenedor-imagen {
-    width: 200px; /* Ancho deseado para el contenedor de la imagen */
-    margin-left: auto; /* Mueve el contenedor de la imagen hacia la derecha */
-    border: solid red 2px;
-}
+
 
 /* Estilos para la imagen */
 .contenedor-imagen img {
@@ -94,17 +123,20 @@ body {
 
 
 
-.divisor2 {
+.divisor2  , .divisorDaga { /*Nuestras remeras*/
     display: flex;
     justify-content: flex-end; /* Alinea el contenido a la derecha */
      /* Ajusta según necesites */
     padding:20px;
+    background-color: #333;
     
 }
 
 .contenedor-imagen {
-    width: 200px; /* Ancho deseado para el contenedor de la imagen */
+    width: 300px; /* Ancho deseado para el contenedor de la imagen */
+    height: 300px;
     margin-right: 20px; /* Espacio entre la imagen y el texto */
+    border: solid red 2px;
 }
 
 .texto2 {
@@ -112,7 +144,9 @@ body {
     width: 50%; /* Ajusta el ancho del contenedor de texto */
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 0px; /* Distancia entre texto grande y chico*/
+    
     
 }
 
@@ -120,12 +154,13 @@ body {
     text-align: right; /* Justifica el texto grande */
     line-height: 1.6; /* Espaciado entre líneas */
     margin-bottom: 0px; /* Espacio inferior para separación del texto chico */
+    text-shadow:  -1px 4px #5e5d5d;
 }
 
 .texto-grande2 h2 {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: white;
     margin: 0; /* Elimina cualquier margen */
 }
 
@@ -137,5 +172,110 @@ body {
 
 .texto-chico2 p {
     margin-top: 20px; /* Elimina cualquier margen */
-    font-size: 14px;
+    font-size: 16px;
+    color: white
+}
+
+
+.divisor3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    margin: 40px auto; /* Margen superior e inferior de 20px y centrado horizontalmente */
+    padding: 20px; /* Espaciado interno para separar el contenido del borde */
+    max-width: 600px; /* Ancho máximo del divisor */
+    border: solid black 2px;
+    background-color: #EFB810;
+    text-align: center; /* Alinea el texto al centro */
+    
+}
+
+.texto-grande3,
+.texto-chico3 {
+    width: 70%; /* Ocupa el 50% del ancho del divisor */
+    padding: 10px; /* Espaciado interno */
+}
+
+.texto-grande3 h2 {
+    font-size: 24px; /* Tamaño de fuente del título */
+    color: black; /* Color de texto */
+    text-shadow:  1px 2px #5e5d5d;
+}
+
+.texto-chico3 p {
+    font-size: 16px; /* Tamaño de fuente del párrafo */
+    margin: 10px;
+    color: #666; /* Color de texto */
+}
+
+
+
+.div-simetrico {
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos horizontalmente */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    margin: 20px auto; /* Margen superior e inferior de 20px y centrado horizontalmente */
+    padding: 20px; /* Espaciado interno para separar el contenido del borde */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    border: 1px solid #ccc; /* Borde para visualización */
+    background-color: #f9f9f9; /* Color de fondo */
+    
+}
+
+.izquierda, .derecha {
+    flex: 1; /* Ocupa el espacio disponible */
+    padding: 10px; /* Espaciado interno */
+}
+
+.texto-grande h2 {
+    font-size: 24px; /* Tamaño de fuente del texto grande */
+    color: #333; /* Color de texto */
+   
+    
+}
+
+.texto-chico p {
+    font-size: 16px; /* Tamaño de fuente del texto pequeño */
+    
+}
+
+.casillero textarea {
+    width: 100%; /* Ancho completo del textarea */
+    height: 100px; /* Altura del textarea */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 10px; /* Margen inferior */
+    border: 1px solid #ccc; /* Borde del textarea */
+}
+
+.casillero button, .cuestionario button {
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #EFB810; /* Color de fondo del botón */
+    color: #fff; /* Color de texto del botón */
+    border: none; /* Borde ninguno */
+    cursor: pointer; /* Cambio de cursor */
+}
+
+.casillero button:hover, .cuestionario button:hover {
+    background-color: #D89B00; /* Color de fondo del botón al pasar el cursor */
+}
+
+.cuestionario form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre elementos del formulario */
+}
+
+.pregunta {
+    display: flex;
+    flex-direction: column;
+}
+
+.pregunta label {
+    margin-bottom: 5px; /* Margen inferior del label */
+}
+
+.pregunta input {
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde del input */
 }

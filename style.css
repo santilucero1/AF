@@ -1,0 +1,141 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.item {
+   
+    color: #EFB810;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    
+}
+
+.texto {
+    color: black;
+}
+
+
+.divisor {
+    display: flex;
+    margin-top: 150px; /* Ajusta según el espacio deseado entre el header fijo y este divisor */
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+
+
+
+.texto {
+    flex: 1; /* Ocupa todo el espacio restante */
+    display: flex; /* Aplica flexbox dentro del contenedor de texto */
+    flex-direction: column; /* Organiza los elementos en columna */
+    gap: 0px;
+}
+
+.texto-grande {
+    margin-bottom: 20px; /* Espacio entre texto superior e inferior */
+}
+
+.texto-grande h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.texto-chico {
+    
+    margin-top: 0px; /* Ajusta el espacio entre texto superior e inferior */
+    
+}
+
+.texto-chico p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contenedor-imagen {
+    width: 200px; /* Ancho deseado para el contenedor de la imagen */
+    margin-left: auto; /* Mueve el contenedor de la imagen hacia la derecha */
+    border: solid red 2px;
+}
+
+/* Estilos para la imagen */
+.contenedor-imagen img {
+    width: 100%; /* Para que la imagen ocupe todo el contenedor */
+    height: auto; /* Para mantener la proporción */
+    border-radius: 5px;
+}
+
+
+
+.divisor2 {
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+     /* Ajusta según necesites */
+    padding:20px;
+    
+}
+
+.contenedor-imagen {
+    width: 200px; /* Ancho deseado para el contenedor de la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.texto2 {
+    flex: 1;
+    width: 50%; /* Ajusta el ancho del contenedor de texto */
+    display: flex;
+    flex-direction: column;
+    gap: 0px; /* Distancia entre texto grande y chico*/
+    
+}
+
+.texto-grande2 {
+    text-align: right; /* Justifica el texto grande */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 0px; /* Espacio inferior para separación del texto chico */
+}
+
+.texto-grande2 h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 0; /* Elimina cualquier margen */
+}
+
+.texto-chico2 {
+    
+    text-align: justify; /* Justifica el texto chico */
+     /* Espaciado entre líneas */
+}
+
+.texto-chico2 p {
+    margin-top: 20px; /* Elimina cualquier margen */
+    font-size: 14px;
+}

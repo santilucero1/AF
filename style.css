@@ -43,6 +43,12 @@ body {
     cursor: pointer;
 }
 
+
+.section {
+    height: 600px;
+    padding: 20px;
+}
+
 .texto {
     color: black;
 }

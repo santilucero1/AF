@@ -11,20 +11,23 @@
 <body>
 
     <div class="header">
-        <div class="item">¿Quienes Somos?</div>
-        <div class="item">Nuestras remeras</div>
-        <div class="item">Diseños</div>
-        <div class="item">Desafio</div>
-        <div class="item">Adivinanza</div>
-        <div class="item">Encuesta</div>
+        <div class="item" onclick="scrollToSection('quienes-somos')">¿Quienes Somos?</div>
+        <div class="item" onclick="scrollToSection('nuestras-remeras')">Nuestras remeras</div>
+        <div class="item" onclick="scrollToSection('disenos')">Diseños</div>
+        <div class="item" onclick="scrollToSection('desafio')">Desafio</div>
+        <div class="item" onclick="scrollToSection('adivinanza')">Adivinanza</div>
+        <div class="item" onclick="scrollToSection('encuesta')">Encuesta</div>
     </div>
+
+ 
+
 
     <div class="divisor-logo">
         <img src="/images/af negro.png" alt="Logo" class="logo">
     </div>
     
 
-    <div class="divisor">
+    <div class="divisor" id="quienes-somos">
         <div class="texto">
             <div class="texto-grande">
                 <h2 style="text-shadow: 1px 4px #a37f11; color: rgb(0, 0, 0);">¿Quienes somos?
@@ -43,7 +46,7 @@
     </div>
 
 
-    <div class="divisor2">
+    <div class="divisor2" id="nuestras-remeras">
 
         <div class="contenedor-imagen">
             <!-- Aquí puedes añadir la etiqueta <img> para tu imagen -->
@@ -65,7 +68,7 @@
         
     </div>
 
-    <div class="divisor" style="background-color: black;">
+    <div class="divisor" id="disenos" style="background-color: black;">
         <div class="texto" >
             <div class="texto-grande">
                 <h2 style="color: #EFB810; text-shadow:  1px 4px  #534315;">La Serpiente y la Daga
@@ -88,7 +91,7 @@
         </div>
     </div>
 
-    <div class="divisor3">
+    <div class="divisor3" id="desafio">
 
             <div class="texto-grande3">
                 <h2>Desafio AF!</h2>
@@ -145,7 +148,7 @@
     </div>
     
 
-
+    <script src="javascript.js"></script>
 </body>
 
 </html>

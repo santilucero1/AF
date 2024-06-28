@@ -14,7 +14,7 @@ body {
 
 .header {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     gap: 10px;
     width: 100%;
     position: fixed;
@@ -53,80 +53,89 @@ body {
     color: black;
 }
 
-
-.divisor-logo {
-    display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    height: 200px; /* Altura del divisor */
-    /* Borde para visualización */
-    margin: 60px auto; /* Margen superior e inferior de 20px y centrado horizontalmente */
-    margin-top: 160px;
-    padding: 50px; /* Espaciado interno para separar el contenido del borde */
-    max-width: 800px; /* Ancho máximo del contenedor */
-}
-
-.logo {
-    max-width: 100%; /* Asegura que la imagen no sobrepase el ancho del contenedor */
-    max-height: 100%; /* Asegura que la imagen no sobrepase la altura del contenedor */
+.contenedor-video-inicio {
+    background-color: black;
+    margin-top: 30%;
 }
 
 
 
-
-.divisor { /*Quienes somos?*/
-    display: flex;
-    margin-top: 0px; /* Ajusta según el espacio deseado entre el header fijo y este divisor */
+.divisor {
+    text-align: center;
     padding: 20px;
-    background-color:#EFB810;
-   
-    
+    background-color: #EFB810;
 }
-
-
-
 
 .texto {
-    flex: 1; /* Ocupa todo el espacio restante */
-    display: flex; /* Aplica flexbox dentro del contenedor de texto */
-    flex-direction: column; /* Organiza los elementos en columna */
-    justify-content: center;
-    gap: 0px;
-}
-
-.texto-grande {
-    margin-bottom: 20px; /* Espacio entre texto superior e inferior */
-}
-
-.texto-grande h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: black;
-    
-    
-}
-
-.texto-chico {
-    
-    margin-top: 0px; /* Ajusta el espacio entre texto superior e inferior */
-    
-}
-
-.texto-chico p {
-    font-size: 16px;
-    color: black;
     margin-bottom: 20px;
 }
 
-
-
-/* Estilos para la imagen */
-.contenedor-imagen img {
-    width: 100%; /* Para que la imagen ocupe todo el contenedor */
-    height: auto; /* Para mantener la proporción */
-    border-radius: 5px;
+.texto-grande h2 {
+    margin: 5%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-shadow: 1px 4px #a37f11;
 }
 
+.texto-chico p {
+    margin: 0 auto;
+    max-width: 600px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.contenedor-video {
+    margin-top: 20px;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+/* ---------------------*/
+
+.divisor2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black; /* Puedes ajustar el color de fondo según sea necesario */
+}
+
+.texto2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.texto-grande2 h2 {
+    text-shadow: 1px 4px #534315; /* Puedes ajustar el color del texto y el sombreado según sea necesario */
+    color: #EFB810;
+}
+
+.texto-chico2 p {
+    margin: 0 auto;
+    max-width: 600px;
+    line-height: 1.6;
+    color: grey;
+}
+
+.contenedor-video2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+iframe {
+    max-width: 100%;
+    height: auto;
+}
 
 
 .divisor2  , .divisorDaga { /*Nuestras remeras*/
@@ -217,71 +226,17 @@ body {
 
 
 
-.div-simetrico {
-    display: flex;
-    justify-content: space-around; /* Distribuye los elementos horizontalmente */
-    align-items: flex-start; /* Alinea los elementos en la parte superior */
-    margin: 20px auto; /* Margen superior e inferior de 20px y centrado horizontalmente */
-    padding: 20px; /* Espaciado interno para separar el contenido del borde */
-    max-width: 800px; /* Ancho máximo del contenedor */
-    border: 1px solid #ccc; /* Borde para visualización */
-    background-color: #f9f9f9; /* Color de fondo */
-    
+
+.boton-container {
+    text-align: center;
+    margin-top: 20px;
 }
 
-.izquierda, .derecha {
-    flex: 1; /* Ocupa el espacio disponible */
-    padding: 10px; /* Espaciado interno */
+#mostrarFormulario {
+    background-color: black;
+    color: gold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
 }
 
-.texto-grande h2 {
-    font-size: 24px; /* Tamaño de fuente del texto grande */
-    color: #333; /* Color de texto */
-   
-    
-}
-
-.texto-chico p {
-    font-size: 16px; /* Tamaño de fuente del texto pequeño */
-    
-}
-
-.casillero textarea {
-    width: 100%; /* Ancho completo del textarea */
-    height: 100px; /* Altura del textarea */
-    padding: 10px; /* Espaciado interno */
-    margin-bottom: 10px; /* Margen inferior */
-    border: 1px solid #ccc; /* Borde del textarea */
-}
-
-.casillero button, .cuestionario button {
-    padding: 10px 20px; /* Espaciado interno */
-    background-color: #EFB810; /* Color de fondo del botón */
-    color: #fff; /* Color de texto del botón */
-    border: none; /* Borde ninguno */
-    cursor: pointer; /* Cambio de cursor */
-}
-
-.casillero button:hover, .cuestionario button:hover {
-    background-color: #D89B00; /* Color de fondo del botón al pasar el cursor */
-}
-
-.cuestionario form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* Espacio entre elementos del formulario */
-}
-
-.pregunta {
-    display: flex;
-    flex-direction: column;
-}
-
-.pregunta label {
-    margin-bottom: 5px; /* Margen inferior del label */
-}
-
-.pregunta input {
-    padding: 10px; /* Espaciado interno */
-    border: 1px solid #ccc; /* Borde del input */
-}

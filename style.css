@@ -27,17 +27,18 @@ body {
 
 .item {
    
-    color: #EFB810;
-    text-shadow:2px 2px #251c04;
+    color:white;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 50px;
+    font-size: 9px;
     
 }
 
 .item:hover {
-    background-color: #EFB810;
+    background-color: white;
     color: black;
     text-shadow: none;
     cursor: pointer;
@@ -66,7 +67,7 @@ body {
 .divisor {
     text-align: center;
     padding: 20px;
-    background-color: #EFB810;
+    background-color: black;
 }
 
 .texto {
@@ -75,16 +76,20 @@ body {
 
 .texto-grande h2 {
     margin: 5%;
-    color: rgb(0, 0, 0);
+    color: white;
     text-align: center;
-    text-shadow: 1px 4px #a37f11;
+    
 }
 
 .texto-chico p {
-    margin: 0 auto;
+    font-style: italic;
+    
+    margin: 10px auto;
     max-width: 600px;
     line-height: 1.6;
+    color: white;
     text-align: justify;
+    
 }
 
 .contenedor-video {
@@ -119,8 +124,8 @@ video {
 }
 
 .texto-grande2 h2 {
-    text-shadow: 1px 4px #534315; /* Puedes ajustar el color del texto y el sombreado según sea necesario */
-    color: #EFB810;
+    text-shadow: none; /* Puedes ajustar el color del texto y el sombreado según sea necesario */
+    color: white;
 }
 
 .texto-chico2 p {
@@ -146,7 +151,7 @@ iframe {
     justify-content: flex-end; /* Alinea el contenido a la derecha */
      /* Ajusta según necesites */
     padding:20px;
-    background-color: #333;
+    background-color:black;
     
 }
 
@@ -204,7 +209,7 @@ iframe {
     padding: 20px; /* Espaciado interno para separar el contenido del borde */
     max-width: 600px; /* Ancho máximo del divisor */
     border: solid black 2px;
-    background-color: #EFB810;
+    background-color: white;
     text-align: center; /* Alinea el texto al centro */
     
 }
@@ -237,7 +242,7 @@ iframe {
 
 #mostrarFormulario {
     background-color: black;
-    color: gold;
+    color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -245,7 +250,7 @@ iframe {
 
 #btnAcepto, #btnAdivinar {
     background-color: black;
-    color: gold;
+    color: white;
     border: none;
     padding: 10px 20px;
     font-size: 16px;

@@ -216,7 +216,7 @@ iframe {
 
 .texto-grande3,
 .texto-chico3 {
-    width: 70%; /* Ocupa el 50% del ancho del divisor */
+    width: 80%; /* Ocupa el 50% del ancho del divisor */
     padding: 10px; /* Espaciado interno */
 }
 
@@ -227,9 +227,10 @@ iframe {
 }
 
 .texto-chico3 p {
-    font-size: 16px; /* Tamaño de fuente del párrafo */
+    font-size: 14px; /* Tamaño de fuente del párrafo */
     margin: 10px;
     color: #666; /* Color de texto */
+    text-align: justify;
 }
 
 

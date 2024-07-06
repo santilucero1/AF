@@ -110,18 +110,108 @@ Fuerza y Determinación: La daga afilada representa tu poder interior, siempre l
    
     <div class="divisor3" id="desafio">
         <div class="texto-grande3">
-            <h2>Desafio AF!</h2>
+            <h2>Desafío AF!</h2>
         </div>
         <div class="texto-chico3" id="textoDesafio">
-            <p>En AF, valoramos el ingenio y la dedicación. Para obtener un regalo exclusivo, te invitamos a completar una adivinanza y un cuestionario. Demuestra tu capacidad y conocimiento, y a cambio, tendrás un regalo especial por formar parte.</p>
-            <p><strong>Además, si estás interesado en iniciar tu propia marca personal o agencia, no dudes en contactarnos. Envíanos un mensaje en Instagram con las palabras "marca personal" o "agencia" y estaremos encantados de ayudarte a dar tus primeros pasos.</strong></p>
+                <p>En AF, valoramos el ingenio y la dedicación. Para obtener un regalo exclusivo, te invitamos a completar una adivinanza y un cuestionario. Demuestra tu capacidad y conocimiento, y a cambio, tendrás un regalo especial por formar parte.</p>
+                <p><strong>Además, si estás interesado en iniciar tu propia marca personal o agencia, no dudes en contactarnos. Envíanos un mensaje en Instagram con las palabras "marca personal" o "agencia" y estaremos encantados de ayudarte a dar tus primeros pasos.</strong></p>
         </div>
 
         <button id="btnAcepto" onclick="mostrarAdivinanza()">Acepto el desafío</button>
-<div id="respuestaContainer" style="display: none;">
-    <input type="text" id="respuestaInput" placeholder="Tu respuesta">
-    <button id="btnAdivinar" onclick="adivinarRespuesta()">Adivinar</button>
-</div>
+        <div id="respuestaContainer">
+            <input type="text" id="respuestaInput" placeholder="Tu respuesta">
+            <button id="btnAdivinar" onclick="adivinarRespuesta()">Adivinar</button>
+        </div>
+
+        <div id="formularioContainer">
+            <form action="procesar_encuesta.php" method="post">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+                <br>
+        
+                <label for="experiencia">¿Cómo describirías tu experiencia general con las camisetas de AF?</label>
+                <select id="experiencia" name="experiencia" required>
+                    <option value="excelente">Excelente</option>
+                    <option value="buena">Buena</option>
+                    <option value="regular">Regular</option>
+                    <option value="mala">Mala</option>
+                </select>
+                <br>
+        
+                <label for="satisfaccion_calidad">¿Qué tan satisfecho/a estás con la calidad de nuestras camisetas?</label>
+                <select id="satisfaccion_calidad" name="satisfaccion_calidad" required>
+                    <option value="muy_satisfecho">Muy satisfecho</option>
+                    <option value="satisfecho">Satisfecho</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="insatisfecho">Insatisfecho</option>
+                    <option value="muy_insatisfecho">Muy insatisfecho</option>
+                </select>
+                <br>
+        
+                <label for="mejora_experiencia">¿Consideras que nuestras camisetas mejoran tu experiencia de entrenamiento?</label>
+                <select id="mejora_experiencia" name="mejora_experiencia" required>
+                    <option value="si_mucho">Sí, mucho</option>
+                    <option value="si_algo">Sí, algo</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="no_poco">No, poco</option>
+                    <option value="para_nada">Para nada</option>
+                </select>
+                <br>
+        
+                <label for="beneficios">¿Qué opinas de los beneficios adicionales que ofrecen nuestras camisetas? ¿Qué crees que agregarías?</label>
+                <textarea id="beneficios" name="beneficios" required></textarea>
+                <br>
+        
+                <label for="precio_justificado">¿Sientes que el precio de nuestras camisetas está justificado por la calidad y los beneficios que ofrecen?</label>
+                <select id="precio_justificado" name="precio_justificado" required>
+                    <option value="totalmente">Totalmente</option>
+                    <option value="justificado">Justificado</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="no_justificado">No justificado</option>
+                    <option value="para_nada">Para nada</option>
+                </select>
+                <br>
+        
+                <label for="valor_agregado">¿Crees que nuestras camisetas ofrecen un valor agregado en comparación con otras marcas?</label>
+                <select id="valor_agregado" name="valor_agregado" required>
+                    <option value="mucho_valor_agregado">Mucho valor agregado</option>
+                    <option value="algo_valor_agregado">Algo de valor agregado</option>
+                    <option value="neutro">Neutral</option>
+                    <option value="poco_valor_agregado">Poco valor agregado</option>
+                    <option value="ningun_valor_agregado">Ningún valor agregado</option>
+                </select>
+                <br>
+        
+                <label for="simbolo_dedicacion">¿Consideras nuestras camisetas como un símbolo de dedicación al entrenamiento y estilo de vida activo?</label>
+                <select id="simbolo_dedicacion" name="simbolo_dedicacion" required>
+                    <option value="si_absolutamente">Sí, absolutamente</option>
+                    <option value="si_cierta_medida">Sí, en cierta medida</option>
+                    <option value="no_seguro">No estoy seguro</option>
+                    <option value="no_tanto">No tanto</option>
+                    <option value="no_para_nada">No, para nada</option>
+                </select>
+                <br>
+        
+                <label for="disenos_futuros">¿Qué próximos diseños te gustaría ver disponibles?</label>
+                <textarea id="disenos_futuros" name="disenos_futuros" required></textarea>
+                <br>
+        
+                <label for="reunion_feedback">¿Estarías interesado/a en participar en una breve reunión de 5 minutos para proporcionar feedback más detallado?</label>
+                <select id="reunion_feedback" name="reunion_feedback" required>
+                    <option value="si_absolutamente">Sí, absolutamente</option>
+                    <option value="no_gracias">No, gracias</option>
+                </select>
+                <br>
+        
+                <label for="comentarios_adicionales">¿Hay algún aspecto adicional que te gustaría mencionar sobre nuestras camisetas o nuestra marca?</label>
+                <textarea id="comentarios_adicionales" name="comentarios_adicionales" required></textarea>
+                <br>
+        
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
 
     <script src="javascript.js"></script>
 </body>

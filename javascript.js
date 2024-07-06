@@ -25,11 +25,14 @@ function mostrarAdivinanza() {
 }
 
 function adivinarRespuesta() {
-    // Aquí podrías manejar la lógica para verificar la respuesta
     var respuestaInput = document.getElementById('respuestaInput').value;
 
-    // Si quieres mostrar el iframe de Google Docs, aquí cambiarías el contenido
-    var desafioDiv = document.getElementById('desafio');
-    desafioDiv.innerHTML = `
-        <iframe src="https://forms.gle/mTtvYzTgfEHv1Ho57"></iframe>`;
+    var textoDesafio = document.getElementById('textoDesafio');
+    textoDesafio.innerHTML = '';
+
+    var respuestaContainer = document.getElementById('respuestaContainer');
+    respuestaContainer.style.display = 'none';
+    
+    var formularioContainer = document.getElementById('formularioContainer');
+    formularioContainer.style.display = 'block';
 }

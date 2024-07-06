@@ -233,6 +233,14 @@ iframe {
     text-align: justify;
 }
 
+#respuestaContainer {
+    display: none;
+}
+
+#formularioContainer {
+    display: none;
+}
+
 
 
 
@@ -262,13 +270,88 @@ iframe {
 }
 
 
-#desafio {
-    width: 100%;
-    height: 600px; /* Ajusta la altura según tus necesidades */
-    margin-top: 20px;
+.divisor3 {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
 }
-#desafio iframe {
-    width: 100%;
-    height: 100%;
+
+.texto-grande3 h2 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.texto-chico3 p {
+    margin: 10px 0;
+}
+
+#respuestaContainer {
+    margin: 20px 0;
+}
+
+#respuestaInput {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#btnAcepto,
+#btnAdivinar {
+    padding: 10px 20px;
     border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
 }
+
+#btnAcepto:hover,
+#btnAdivinar:hover {
+    background-color: #45a049;
+}
+
+#formularioContainer {
+    text-align: left;
+    margin: 20px 0;
+}
+
+#formularioContainer form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#formularioContainer label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#formularioContainer input,
+#formularioContainer select,
+#formularioContainer textarea,
+#formularioContainer button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#formularioContainer button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+}
+
+#formularioContainer button:hover {
+    background-color: #45a049;
+}
+

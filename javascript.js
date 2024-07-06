@@ -36,3 +36,16 @@ function adivinarRespuesta() {
     var formularioContainer = document.getElementById('formularioContainer');
     formularioContainer.style.display = 'block';
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('form').addEventListener('submit', function(event) {
+        // Prevenir el comportamiento predeterminado de enviar el formulario
+        event.preventDefault();
+        
+        // Crear una nueva pestaña para abrir premio.html
+        window.open("premio.html", "_blank");
+        
+        // Enviar el formulario
+        this.submit();
+    });
+});

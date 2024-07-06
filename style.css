@@ -82,7 +82,7 @@ body {
 }
 
 .texto-chico p {
-    font-style: italic;
+    font-weight: bold;
     
     margin: 10px auto;
     max-width: 600px;
